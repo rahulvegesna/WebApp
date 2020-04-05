@@ -21,15 +21,11 @@ import servlet.createpage;
 
 public class createpage_junit {
 	
-	
 	public createpage obj = new createpage();
-	
 	
 	@Test
 	public void test() throws ServletException, IOException
 	{
-		
-		
 		MockHttpServletRequest request = new MockHttpServletRequest();
 		
 		MockHttpServletResponse response = new MockHttpServletResponse(); response.setContentType("text/html");
@@ -39,17 +35,6 @@ public class createpage_junit {
 		 request.addParameter("date", "13/04/2017");
 		 request.addParameter("status", "NEW");
 		
-		obj.doPost(request, response);
-		
+		obj.doPost(request, response);	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }
